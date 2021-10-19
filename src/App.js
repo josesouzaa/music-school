@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { GlobalStyle } from './GlobalStyle';
+import Cursos from './Objects/Cursos';
+import Preco from './Objects/Preco';
+import Header from './Objects/Header'
+import Intro from './Objects/Intro'
+import Vantagens from './Objects/Vantagens';
+import Aplicativo from './Objects/Aplicativo';
+import Depoimentos from './Objects/Depoimentos';
+import Footer from './Objects/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalStyle />
+      <Header />
+      <Intro />
+      <Cursos />
+      <Preco />
+      <Vantagens />
+      <Aplicativo />
+      <Depoimentos />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
